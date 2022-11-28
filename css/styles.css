@@ -88,9 +88,9 @@ img:hover{
     transition: 0.3s ease-in-out;
 }
 
-/* .hide{
+.hide{
     display: none;
-} */
+}
 
 .show{
     display: flex;
@@ -101,6 +101,27 @@ img:hover{
     border: solid 4px var(--white);
     color: var(--white);
     
+}
+
+#story-title,
+#game-title{
+    font-size: 20pt;
+    border: solid 4px var(--black);
+    color: var(--black);
+    background-color: var(--white);
+    padding: 10px 32px;
+    border-radius: 5px;
+}
+
+#story-title:hover,
+#game-title:hover{
+    /* transform: translateY(-15px); */
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    color: var(--white);
+    background-color: var(--black);
+    border: solid 2px var(--white);
+    cursor: pointer;
 }
 
 /* ---------------------------------CONTENT CONTAINER STARTS  */
@@ -135,9 +156,14 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/bouncy-ball.jpg');
-    background-blend-mode: screen;
+    /* border: solid 2px var(--white); */
+    background-image: url('../img/book.png');
+    
 }
+
+
+
+
  /* ----------------------------STORY CONTAINER END --------------------------- */
 
 /*---------------------------- GAME CONTAINER ------------------------------------- */
@@ -158,8 +184,9 @@ img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/ninja-toy.jpg');
-    background-blend-mode: screen;
+    /* border: solid 2px var(--white); */
+    background-image: url('../img/game.png');
+    
 }
 
 /*---------------------------- GAME CONTAINER END ------------------------------------- */

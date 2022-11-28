@@ -2,45 +2,99 @@
 // cardArray.sort(() => 0.5 - Math.random())
 
 // GLOBAL VARIABLES ---------------------------------------------------------------
-const gridDisplay= document.querySelector('#grid')
-const resultDisplay = document.querySelector('#result')
+
 let storyBackground= document.querySelector('#story-bg')
 let gameBackground= document.querySelector('#game-bg')
 const bookOne= document.querySelector('#i')
 let books= document.querySelectorAll('.book')
 let booksArray=[books]
+let storyTitleDisplay= document.querySelector('#story-title')
+let gameTitleDisplay= document.querySelector('#game-title')
+ 
         // ------------------------------------------ 
 
-
-// booksArray.addEventListener('click', openBook)
-// function openBook(){
-//             for (let i = 0; i < books.length; i++) {
-//                 let bookNumber = books[i].getAttribute('data-id')         
-//             }
-//             console.log(bookNumber)
-//         }     
-
-
-
-// for(i of books){
+for(i of books){
     
-//     i.addEventListener('click', openBook)
+    i.addEventListener('click', openBook)
 
-//     function openBook(){
-//         for (let i = 0; i <= books.length; i++) {
-            
-                       
-//         }       
-        
-//     }
-// }
-
-for (var i = 0 ; i < booksArray.length ; ++i) {
-    function(index) {
-        booksArray[index].addEventListener("click", openBook() {
-            alert ("You clicked region number: " + index");
-        });
-    };
+    function openBook(e){
+        // if book i is chosen               
+           if(e.target.getAttribute('id') === 'i'){
+            console.log('book i chosen')
+            storyBackground.style.backgroundImage= "url('img/sticky-hand.jpg')";
+            gameBackground.style.backgroundImage= "url('img/sticky-hand.png')";
+            storyTitleDisplay.innerHTML= "Story i"
+            gameTitleDisplay.innerHTML= "Game i"
+            gameTitleDisplay.setAttribute('href', 'https://parksrichiework-memory-game.netlify.app/')
+            gameTitleDisplay.setAttribute('target', '_blank')
+           } 
+        //    if book ii is chosen 
+           else if(e.target.getAttribute('id') === 'ii'){
+            console.log('book ii chosen')
+            storyBackground.style.backgroundImage= "url('img/bouncy-ball.jpg')";
+            gameBackground.style.backgroundImage= "url('img/bouncy-ball.png')";
+            storyTitleDisplay.innerHTML= "Story ii"
+            gameTitleDisplay.innerHTML= "Game ii"
+            // -----------------------------------change game link here vvvvv 
+            gameTitleDisplay.setAttribute('href', 'https://parksrichiework.github.io/frogger-game/')
+            gameTitleDisplay.setAttribute('target', '_blank')
+           }  
+           
+        //    if book iii is chosen 
+         
+            else if(e.target.getAttribute('id') === 'iii'){
+            console.log('book iii chosen')
+            storyBackground.style.backgroundImage= "url('img/ninja-toy.jpg')";
+            gameBackground.style.backgroundImage= "url('img/ninja-toy.png')";
+            storyTitleDisplay.innerHTML= "Story iii"
+            gameTitleDisplay.innerHTML= "Game iii"
+            // -----------------------------------change game link here vvvvv 
+            gameTitleDisplay.setAttribute('href', 'https://parksrichiework.github.io/Shape-Sorting-Game/')
+            gameTitleDisplay.setAttribute('target', '_blank')
+           } 
+        //    if book iv is chosen
+           else if(e.target.getAttribute('id') === 'iv'){
+            console.log('book iv chosen')
+            storyBackground.style.backgroundImage= "url('img/ring.jpg')";
+            gameBackground.style.backgroundImage= "url('img/ring.png')";
+            storyTitleDisplay.innerHTML= "Story iv"
+            gameTitleDisplay.innerHTML= "Game iv"
+            // -----------------------------------change game link here vvvvv 
+            gameTitleDisplay.setAttribute('href', 'https://parksrichiework.github.io/whack-a-mole/')
+            gameTitleDisplay.setAttribute('target', '_blank')
+           } 
+        //    if book v is chosen 
+           else if(e.target.getAttribute('id') === 'v'){
+            console.log('book v chosen')
+            storyBackground.style.backgroundImage= "url('img/capsule.jpg')";
+            gameBackground.style.backgroundImage= "url('img/capsule.png')";
+            storyTitleDisplay.innerHTML= "Story iv"
+            gameTitleDisplay.innerHTML= "Game iv"
+            // -----------------------------------change game link here vvvvv 
+            gameTitleDisplay.setAttribute('href', 'https://parksrichiework-memory-game.netlify.app/')
+            gameTitleDisplay.setAttribute('target', '_blank')
+           }
+        //    if book vi is chosen
+           else if(e.target.getAttribute('id') === 'vi'){
+            console.log('book vi chosen')
+            storyBackground.style.backgroundImage= "url('img/dispenser.jpg')";
+            gameBackground.style.backgroundImage= "url('img/dispenser.png')";
+            storyTitleDisplay.innerHTML= "Story iv"
+            gameTitleDisplay.innerHTML= "Game iv"
+            // -----------------------------------change game link here vvvvv 
+            gameTitleDisplay.setAttribute('href', 'https://parksrichiework-memory-game.netlify.app/')
+            gameTitleDisplay.setAttribute('target', '_blank')
+           } 
+           
+           else{
+            storyBackground.style.backgroundImage= "url('img/book.png')";
+            gameBackground.style.backgroundImage= "url('img/game.png')";
+            storyTitleDisplay.innerHTML= "choose a story"
+            gameTitleDisplay.innerHTML= "choose a story"
+            gameTitleDisplay.setAttribute('href', '')
+           }
+             
+    }
 }
 
 
