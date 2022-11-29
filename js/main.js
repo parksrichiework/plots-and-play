@@ -96,7 +96,8 @@ for(i of books){
         storyTitleDisplay.classList.remove('hide')
         storyTitleDisplay.style.display= 'flex'
         storyContainer.style.width= '50%'
-        storyBackground.style.width= '92%'   
+        storyBackground.style.width= '92%'
+        storyBackground.style.backgroundRepeat= 'repeat'   
         
            
              
@@ -117,8 +118,9 @@ function openStory(e){
         storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic_ummm.jpg')"
-        storyBackground.style.backgroundSize= 'fit'
+        // storyBackground.style.backgroundSize= 'fill'
         storyBackground.style.backgroundPosition= 'center'
+        storyBackground.style.backgroundRepeat= 'no-repeat'
         
         
     } 
@@ -132,7 +134,9 @@ function openStory(e){
         storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-02.jpg')"
-        storyBackground.style.backgroundSize= 'fit'
+        // storyBackground.style.backgroundSize= 'fit'
+        storyBackground.style.backgroundPosition= 'center'
+        storyBackground.style.backgroundRepeat= 'no-repeat'
         
     } 
 
@@ -144,7 +148,9 @@ function openStory(e){
         storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-03.jpg')"
-        storyBackground.style.backgroundSize= 'fit'
+        // storyBackground.style.backgroundSize= 'fit'
+        storyBackground.style.backgroundPosition= 'center'
+        storyBackground.style.backgroundRepeat= 'no-repeat'
         
     } 
 
@@ -156,7 +162,9 @@ function openStory(e){
         storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-04.jpg')"
-        storyBackground.style.backgroundSize= 'fit'
+        // storyBackground.style.backgroundSize= 'fit'
+        storyBackground.style.backgroundPosition= 'center'
+        storyBackground.style.backgroundRepeat= 'no-repeat'
         
     } 
 
@@ -168,7 +176,9 @@ function openStory(e){
         storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-05.jpg')"
-        storyBackground.style.backgroundSize= 'fit'
+        // storyBackground.style.backgroundSize= 'fit'
+        storyBackground.style.backgroundPosition= 'center'
+        storyBackground.style.backgroundRepeat= 'no-repeat'
         
     }
     if(e.target.innerHTML=== "Story vi"){
@@ -179,7 +189,9 @@ function openStory(e){
         storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-06.jpg')"
-        storyBackground.style.backgroundSize= 'fit'     
+        // storyBackground.style.backgroundSize= 'fit'
+        storyBackground.style.backgroundPosition= 'center'
+        storyBackground.style.backgroundRepeat= 'no-repeat'     
 
         
     } 
