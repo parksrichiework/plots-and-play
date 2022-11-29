@@ -148,7 +148,7 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel-04.jpg')"
         storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
@@ -159,7 +159,7 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel-02.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel-05.jpg')"
         storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
@@ -170,7 +170,7 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel-03.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel-06.jpg')"
         storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
