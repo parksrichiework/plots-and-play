@@ -9,7 +9,10 @@ const bookOne= document.querySelector('#i')
 let books= document.querySelectorAll('.book')
 let booksArray=[books]
 let storyTitleDisplay= document.querySelector('#story-title')
+let storyContainer= document.querySelector('.story-container')
 let gameTitleDisplay= document.querySelector('#game-title')
+let gameContainer= document.querySelector('.game-container')
+const body=document.querySelector('#body')
  
         // ------------------------------------------ 
 
@@ -68,8 +71,8 @@ for(i of books){
             console.log('book v chosen')
             storyBackground.style.backgroundImage= "url('img/capsule.jpg')";
             gameBackground.style.backgroundImage= "url('img/capsule.png')";
-            storyTitleDisplay.innerHTML= "Story iv"
-            gameTitleDisplay.innerHTML= "Game iv"
+            storyTitleDisplay.innerHTML= "Story v"
+            gameTitleDisplay.innerHTML= "Game v"
             // -----------------------------------change game link here vvvvv 
             gameTitleDisplay.setAttribute('href', 'https://parksrichiework-memory-game.netlify.app/')
             gameTitleDisplay.setAttribute('target', '_blank')
@@ -78,27 +81,106 @@ for(i of books){
            else if(e.target.getAttribute('id') === 'vi'){
             console.log('book vi chosen')
             storyBackground.style.backgroundImage= "url('img/dispenser.jpg')";
-            gameBackground.style.backgroundImage= "url('img/dispenser.png')";
-            storyTitleDisplay.innerHTML= "Story iv"
-            gameTitleDisplay.innerHTML= "Game iv"
+            gameBackground.style.backgroundImage= "url('img/dispenser.jpg')";
+            storyTitleDisplay.innerHTML= "Story vi"
+            gameTitleDisplay.innerHTML= "Game vi"
             // -----------------------------------change game link here vvvvv 
             gameTitleDisplay.setAttribute('href', 'https://parksrichiework-memory-game.netlify.app/')
             gameTitleDisplay.setAttribute('target', '_blank')
            } 
            
-           else{
-            storyBackground.style.backgroundImage= "url('img/book.png')";
-            gameBackground.style.backgroundImage= "url('img/game.png')";
-            storyTitleDisplay.innerHTML= "choose a story"
-            gameTitleDisplay.innerHTML= "choose a story"
-            gameTitleDisplay.setAttribute('href', '')
-           }
+        gameBackground.style.display= 'flex'
+        gameContainer.style.display= 'flex'        
+        storyTitleDisplay.style.display= 'flex'
+
+        if(body.style.width<= '640px'){
+            storyBackground.style.width= '170px'
+            storyContainer.style.width= '190px'
+        }
+           
              
     }
+
+   
 }
 
 
+storyTitleDisplay.addEventListener('click', openStory)
 
+function openStory(e){
+    if(e.target.innerHTML=== "Story i"){
+        console.log('open story i')
+        gameBackground.style.display= 'none'
+        gameContainer.style.display= 'none'
+        storyBackground.style.width= '580px'
+        storyBackground.style.backgroundImage= "url('img/sticky-hand.jpg')"
+        storyContainer.style.width= '600px'
+        storyTitleDisplay.style.display= 'none'
+    } 
+
+    if(e.target.innerHTML=== "Story ii"){
+        console.log('open story ii')
+        gameBackground.style.display= 'none'
+        gameContainer.style.display= 'none'
+        storyBackground.style.width= '580px'
+        storyBackground.style.backgroundImage= "url('img/bouncy-ball.jpg')"
+        storyContainer.style.width= '600px'
+        storyTitleDisplay.style.display= 'none'
+    } 
+
+    if(e.target.innerHTML=== "Story iii"){
+        console.log('open story iii')
+        gameBackground.style.display= 'none'
+        gameContainer.style.display= 'none'
+        storyBackground.style.width= '580px'
+        storyBackground.style.backgroundImage= "url('img/ninja-toy.jpg')"
+        storyContainer.style.width= '600px'
+        storyTitleDisplay.style.display= 'none'
+    } 
+
+    if(e.target.innerHTML=== "Story iv"){
+        console.log('open story iv')
+        gameBackground.style.display= 'none'
+        gameContainer.style.display= 'none'
+        storyBackground.style.width= '580px'
+        storyBackground.style.backgroundImage= "url('img/ring.jpg')"
+        storyContainer.style.width= '600px'
+        storyTitleDisplay.style.display= 'none'
+    } 
+
+    if(e.target.innerHTML=== "Story v"){
+        console.log('open story v')
+        gameBackground.style.display= 'none'
+        gameContainer.style.display= 'none'
+        storyBackground.style.width= '580px'
+        storyBackground.style.backgroundImage= "url('img/capsule.jpg')"
+        storyContainer.style.width= '600px'
+        storyTitleDisplay.style.display= 'none'
+    } 
+
+    if(e.target.innerHTML=== "Story vi"){
+        console.log('open story vi')
+        gameBackground.style.display= 'none'
+        gameContainer.style.display= 'none'
+        storyBackground.style.width= '580px'
+        storyBackground.style.backgroundImage= "url('img/dispenser.jpg')"
+        storyContainer.style.width= '600px'
+        storyTitleDisplay.style.display= 'none'
+
+        
+    } 
+    if(body.style.width<= '640px'){
+        storyBackground.style.width= '360px'            
+        storyContainer.style.width= '380px'
+    }
+   
+}
+
+// if(body.style.width<= '640px'){
+//     storyBackground.style.width= '360px'
+//     storyBackground.style.backgroundImage= "url('img/sticky-hand.jpg')"
+//     storyContainer.style.width= '380px'
+// }
 
 // function createBoard (){
 //     for(let i=0; i < cardArray.length; i++){

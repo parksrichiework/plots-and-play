@@ -126,7 +126,7 @@ img:hover{
 
 /* ---------------------------------CONTENT CONTAINER STARTS  */
 .content-container{
-    margin: 30px 0px 60px; 
+    margin: 30px 0px 40px; 
     width: 600px;
     height: 600px;
     display:flex;
@@ -205,18 +205,27 @@ img:hover{
     background-color: var(--celadon-blue);
     width: 50px;
     height: 100px;
-    text-align: center;
-    justify-items: baseline;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     color: var(--white);
-    border-radius: 5px;;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    background-image: url(../img/book-spine.PNG) ;
+    background-size: cover;
    
 }
 
 .book:hover{
     transform: scale(1.5);
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
+#book-end{
+    border-left: solid 3px var(--darker-purple);
+    
+}
 
 
  /*--------------------------- LIBRARY STYLES END ------------------------------- */
@@ -297,12 +306,13 @@ footer{
 
 
 
-/* MOBILE STYLES ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------- MOBILE STYLES ----------------------------------------------------------------------- */
 
 @media screen and (max-width: 640px) {
 	
 	body{
-		/* width: 100%; */
+		width: 100%;
+        margin:0;
 		/* height: auto; */
 	} 
     #grid{
@@ -311,6 +321,10 @@ footer{
         align-items: center;
         transform: scale(1.3);
         
+    }
+
+    main{
+        flex-direction: row;
     }
 
     h1,
@@ -333,6 +347,128 @@ footer{
         opacity: 1;
        transition: none;
     }
+
+    .title{
+        font-size: 20pt;
+        border: solid 3px var(--white);
+        color: var(--white);
+        padding: 0px 3em;
+        
+    }
+
+    #story-title,
+    #game-title{
+    font-size: 16pt;
+    border: solid 2px var(--black);
+    color: var(--black);
+    background-color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ---------------------------------mobile CONTENT CONTAINER STARTS  */
+.content-container{
+    margin: 30px 0px 60px 0px; 
+    width: 380px;
+    height: 600px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--white);
+}
+
+ /* ---------------------- mobile CONTENT CONTAINER ENDS  */
+
+/* ---------------------------- mobile STORY CONTAINER --------------------------- */
+
+.story-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 600px;
+    background-color: var(--black);
+    
+}
+
+.story-container div{
+    background-color: var(--purple);
+    width: 170px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px var(--white); */
+    background-image: url('../img/book.png');
+    
+}
+
+
+
+
+ /* ---------------------------- mobile STORY CONTAINER END --------------------------- */
+
+/*---------------------------- mobile GAME CONTAINER ------------------------------------- */
+.game-container{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 600px;
+    background-color: var(--black);
+}
+
+.game-container div{
+    background-color: var(--purple);
+    width: 170px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px var(--white); */
+    background-image: url('../img/game.png');
+    
+}
+
+/*---------------------------- mobile GAME CONTAINER END ------------------------------------- */
+
+
+
+/*--------------------- mobile LIBRARY STYLES ------------------------ */
+.library-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    justify-content: space-between;
+}
+
+.book{
+    background-color: var(--celadon-blue);
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 5px;
+    padding-bottom: 10px;
+   
+}
+
+.book:hover{
+    transform: scale(1.5);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+ /*--------------------------- mobile LIBRARY STYLES END ------------------------------- */
+
 	.services-about{
 		display: inline-block;
 		text-align: center;
