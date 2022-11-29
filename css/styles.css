@@ -157,7 +157,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     /* border: solid 2px var(--white); */
-    background-image: url('../img/book.png');
+    background-image: url('../img/book.jpg');
     
 }
 
@@ -185,7 +185,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     /* border: solid 2px var(--white); */
-    background-image: url('../img/game.png');
+    background-image: url('../img/game.jpg');
     
 }
 
