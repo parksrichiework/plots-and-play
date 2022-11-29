@@ -159,6 +159,7 @@ img:hover{
     /* border: solid 2px var(--white); */
     background-image: url('../img/book.jpg');
     
+    
 }
 
 
@@ -186,6 +187,8 @@ img:hover{
     align-items: center;
     /* border: solid 2px var(--white); */
     background-image: url('../img/game.jpg');
+    background-size:contain;
+    
     
 }
 
@@ -404,8 +407,8 @@ footer{
     justify-content: center;
     align-items: center;
     /* border: solid 2px var(--white); */
-    background-image: url('../img/book.png');
-    
+    background-image: url('../img/book.jpg');
+    background-size:contain;
 }
 
 
@@ -432,7 +435,8 @@ footer{
     justify-content: center;
     align-items: center;
     /* border: solid 2px var(--white); */
-    background-image: url('../img/game.png');
+    background-image: url('../img/game.jpg');
+    background-size: contain;
     
 }
 
