@@ -126,7 +126,7 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel-02.png')"
         storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
@@ -137,7 +137,7 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel-03.png')"
         storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
@@ -159,7 +159,7 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel-02.png')"
         storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
@@ -170,7 +170,7 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel-03.png')"
         storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
