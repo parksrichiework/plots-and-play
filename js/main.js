@@ -93,7 +93,7 @@ for(i of books){
         gameContainer.style.display= 'flex'        
         storyTitleDisplay.style.display= 'flex'
 
-        if(body.style.width<= '640px'){
+        if(body.style.width <= '640px'){
             storyBackground.style.width= '170px'
             storyContainer.style.width= '190px'
         }
