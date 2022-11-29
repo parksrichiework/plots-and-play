@@ -21,6 +21,8 @@ for(i of books){
     i.addEventListener('click', openBook)
 
     function openBook(e){
+        gameTitleDisplay.style.display= 'flex'
+
         // if book i is chosen               
            if(e.target.getAttribute('id') === 'i'){
             console.log('book i chosen')
@@ -91,12 +93,11 @@ for(i of books){
            
         gameBackground.style.display= 'flex'
         gameContainer.style.display= 'flex'        
+        storyTitleDisplay.classList.remove('hide')
         storyTitleDisplay.style.display= 'flex'
-
-        if(body.style.width <= '640px'){
-            storyBackground.style.width= '170px'
-            storyContainer.style.width= '190px'
-        }
+        storyContainer.style.width= '50%'
+        storyBackground.style.width= '92%'   
+        
            
              
     }
@@ -108,15 +109,17 @@ for(i of books){
 storyTitleDisplay.addEventListener('click', openStory)
 
 function openStory(e){
-    if(e.target.innerHTML=== "Story i"){
+    if(e.target.innerHTML=== "Story i" && body.style.width < '640px'){
         console.log('open story i')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
-        storyBackground.style.width= '580px'
+        storyBackground.style.width= '95%'
+        storyContainer.style.width= '99%'
+        storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel.jpg')"
         storyBackground.style.backgroundSize= 'fit'
-        storyContainer.style.width= '600px'
-        storyTitleDisplay.style.display= 'none'
+        storyBackground.style.backgroundPosition= 'center'
+        
         
     } 
     
@@ -125,121 +128,66 @@ function openStory(e){
         console.log('open story ii')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
-        storyBackground.style.width= '580px'
+        storyBackground.style.width= '95%'
+        storyContainer.style.width= '99%'
+        storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-02.jpg')"
         storyBackground.style.backgroundSize= 'fit'
-        storyContainer.style.width= '600px'
-        storyTitleDisplay.style.display= 'none'
+        
     } 
 
     if(e.target.innerHTML=== "Story iii"){
         console.log('open story iii')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
-        storyBackground.style.width= '580px'
+        storyBackground.style.width= '95%'
+        storyContainer.style.width= '99%'
+        storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-03.jpg')"
         storyBackground.style.backgroundSize= 'fit'
-        storyContainer.style.width= '600px'
-        storyTitleDisplay.style.display= 'none'
+        
     } 
 
     if(e.target.innerHTML=== "Story iv"){
         console.log('open story iv')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
-        storyBackground.style.width= '580px'
+        storyBackground.style.width= '95%'
+        storyContainer.style.width= '99%'
+        storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-04.jpg')"
         storyBackground.style.backgroundSize= 'fit'
-        storyContainer.style.width= '600px'
-        storyTitleDisplay.style.display= 'none'
+        
     } 
 
     if(e.target.innerHTML=== "Story v"){
         console.log('open story v')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
-        storyBackground.style.width= '580px'
+        storyBackground.style.width= '95%'
+        storyContainer.style.width= '99%'
+        storyTitleDisplay.style.display= 'none'
         storyBackground.style.backgroundImage= "url('img/comic-panel-05.jpg')"
         storyBackground.style.backgroundSize= 'fit'
-        storyContainer.style.width= '600px'
-        storyTitleDisplay.style.display= 'none'
-    } 
-
+        
+    }
     if(e.target.innerHTML=== "Story vi"){
         console.log('open story vi')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
-        storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/comic-panel-06.jpg')"
-        storyBackground.style.backgroundSize= 'fit'
-        storyContainer.style.width= '600px'
+        storyBackground.style.width= '95%'
+        storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
+        storyBackground.style.backgroundImage= "url('img/comic-panel-06.jpg')"
+        storyBackground.style.backgroundSize= 'fit'     
 
         
     } 
-    if(body.style.width<= '640px'){
-        storyBackground.style.width= '360px'            
-        storyContainer.style.width= '380px'
-    }
+    // if(body.style.width<= '640px'){
+    //     storyBackground.style.width= '360px'            
+    //     storyContainer.style.width= '380px'
+    // }
    
+
 }
-
-// if(body.style.width<= '640px'){
-//     storyBackground.style.width= '360px'
-//     storyBackground.style.backgroundImage= "url('img/sticky-hand.jpg')"
-//     storyContainer.style.width= '380px'
-// }
-
-// function createBoard (){
-//     for(let i=0; i < cardArray.length; i++){
-//         const card = document.createElement('img')
-//         card.setAttribute('src', 'img/blank-logo.jpg')
-//         card.setAttribute('data-id', i)
-//         card.addEventListener('click', flipCard)
-//         gridDisplay.append(card)
-//         // console.log(card, i)
-//     }
-// }
-
-// createBoard()
-
-
-
-
-
-// function flipCard(){
-//     const cardId = this.getAttribute('data-id')
-//     // console.log(cardArray[cardId].name)
-//     cardsChosen.push(cardArray[cardId].name)
-//     cardsChosenIds.push(cardId)
-//     // console.log('clicked', cardId)
-//     // console.log(cardsChosen)
-//     this.setAttribute('src', cardArray[cardId].img)
-//     if(cardsChosen.length === 2){
-//         setTimeout(checkMatch, 500)
-//     }
-    
-// }
-
-
-
-//  let allCloseButtons = document.querySelectorAll('.close')
-//  let allInfo= document.querySelectorAll('div.info')
- 
-
-// for(i of allCloseButtons){
-//     i.addEventListener('click', closeInfo)
-
-//     function closeInfo(){
-//         for (let i = 0; i <= allInfo.length; i++) {
-//             if(allInfo[i].style.display= 'flex'){
-//                 allInfo[i].style.display= 'none'
-//                 document.querySelector('.info-box').style.display= 'none'
-//             }            
-//         }       
-        
-//     }
-// }
-
-
 
