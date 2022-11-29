@@ -113,17 +113,21 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/sticky-hand.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
+        
     } 
+    
 
     if(e.target.innerHTML=== "Story ii"){
         console.log('open story ii')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/bouncy-ball.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
     } 
@@ -133,7 +137,8 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/ninja-toy.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
     } 
@@ -143,7 +148,8 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/ring.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
     } 
@@ -153,7 +159,8 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/capsule.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
     } 
@@ -163,7 +170,8 @@ function openStory(e){
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '580px'
-        storyBackground.style.backgroundImage= "url('img/dispenser.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic-panel.png')"
+        storyBackground.style.backgroundSize= 'fit'
         storyContainer.style.width= '600px'
         storyTitleDisplay.style.display= 'none'
 
