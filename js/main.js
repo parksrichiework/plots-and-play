@@ -28,8 +28,8 @@ for(i of books){
             console.log('book i chosen')
             storyBackground.style.backgroundImage= "url('img/sticky-hand.jpg')";
             gameBackground.style.backgroundImage= "url('img/sticky-hand.png')";
-            storyTitleDisplay.innerHTML= "Story i"
-            gameTitleDisplay.innerHTML= "Game i"
+            storyTitleDisplay.innerHTML= "Umm..."
+            gameTitleDisplay.innerHTML= "Memory Game"
             gameTitleDisplay.setAttribute('href', 'https://parksrichiework-memory-game.netlify.app/')
             gameTitleDisplay.setAttribute('target', '_blank')
            } 
@@ -109,14 +109,14 @@ for(i of books){
 storyTitleDisplay.addEventListener('click', openStory)
 
 function openStory(e){
-    if(e.target.innerHTML=== "Story i" && body.style.width < '640px'){
+    if(e.target.innerHTML=== "Umm..." && body.style.width < '640px'){
         console.log('open story i')
         gameBackground.style.display= 'none'
         gameContainer.style.display= 'none'
         storyBackground.style.width= '95%'
         storyContainer.style.width= '99%'
         storyTitleDisplay.style.display= 'none'
-        storyBackground.style.backgroundImage= "url('img/comic-panel.jpg')"
+        storyBackground.style.backgroundImage= "url('img/comic_ummm.jpg')"
         storyBackground.style.backgroundSize= 'fit'
         storyBackground.style.backgroundPosition= 'center'
         
